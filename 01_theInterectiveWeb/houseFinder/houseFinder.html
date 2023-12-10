@@ -15,17 +15,22 @@
 			<form name="orderform" action="/submit" method="POST">
 				<div class="field"> รายได้ต่อเดือน :
 					<input type="text" name="income" id="income" placeholder="30000"
-					onblur="validateNumber(this.value)"/></div>
+					/></div>
+					<!-- onblur="validateNumber(this.value)"/></div> -->
 				<div class="field"> จำนวนห้องนอน :(ห้อง)
 					<input type="text" name="bedrooms" id="bedrooms" placeholder="2" required
-					onblur="validateNumber(this.value)"/></div>
+					/></div>
+					<!-- onblur="validateNumber(this.value)"/></div> -->
 				<div class="field"> รหัสไปรษณีย์
 					<input type="text" name="zipcode" id="zipcode" placeholder="50100" required
-					onblur="validateZIPCode(this.value)"/></div>
+					/></div>
+					<!-- onblur="validateZIPCode(this.value)"/></div> -->
 				<input type="submit" value="คำนวนราคา"
-				onclick="calcPrice();"/>
+				/>
+				<!-- onclick="calcPrice();"/> -->
 				<input type="submit" value="ค้นหา"
-				onclick="findHouses(this.Form);"/>
+				/>
+				<!-- onclick="findHouses(this.Form);"/> -->
 			</form>
 		</div>
 	</body>
