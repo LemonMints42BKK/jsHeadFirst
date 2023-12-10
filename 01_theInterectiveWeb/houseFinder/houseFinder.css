@@ -1,0 +1,26 @@
+<style type="text/css">
+	body {
+		font : 1em/1.5em verdana, arial, helvetica, sans-serif;
+		text-align : center;
+	}
+
+	#frame {
+		width : 400px;
+		margin : 0 auto;
+	}
+
+	#header {
+		font: bold 1.2em/1.5em verdana, arial, helvetica, sans-serif;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+
+	#left {
+		float : left;
+		width : 400px;
+	}
+
+	div.field {
+		margin-bottom : 10px;
+	}
+</style>

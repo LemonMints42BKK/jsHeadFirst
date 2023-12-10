@@ -1,0 +1,32 @@
+<!--DOCTYPE html-->
+<html lang="th">
+	<head>
+		<title>House Finder</title>
+		<link rel="stylesheet" type="text/css" href="houseFinder.css">
+		<script src="houseRate.js"></script>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div id="frame">
+			<div id="header">กำลังมองหาบ้านในฝันอยู่ ใช่ไหม?</div>
+			<div id="left">
+				<img src="https://images.adsttc.com/media/images/5b55/1ffd/f197/cc1f/6400/0120/large_jpg/279A9007.jpg?1532305395" alt="houseFinder" width="90%" height="80%">				
+			</div>
+			<form name="orderform" action="/submit" method="POST">
+				<div class="field"> รายได้ต่อเดือน :
+					<input type="text" name="income" id="income" placeholder="30000"
+					onblur="validateNumber(this.value)"/></div>
+				<div class="field"> จำนวนห้องนอน :(ห้อง)
+					<input type="text" name="bedrooms" id="bedrooms" placeholder="2" required
+					onblur="validateNumber(this.value)"/></div>
+				<div class="field"> รหัสไปรษณีย์
+					<input type="text" name="zipcode" id="zipcode" placeholder="50100" required
+					onblur="validateZIPCode(this.value)"/></div>
+				<input type="submit" value="คำนวนราคา"
+				onclick="calcPrice();"/>
+				<input type="submit" value="ค้นหา"
+				onclick="findHouses(this.Form);"/>
+			</form>
+		</div>
+	</body>
+</html>
