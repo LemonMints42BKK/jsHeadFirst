@@ -6,7 +6,8 @@ function validateNumber(value){
 }
 function validateZIPCode(value){
 //varlidte the zip code
-	if (isNAN(value) || value.length != 5)
+	validateNumber(value);
+	if (value.length != 5)
 		alert("กรุณากรอกรหัสไปรษณีย์ 5 หลัก");
 }
 function calcPrice(){
